@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: hsl(215, 51%, 70%);
+    --secondary-color: hsl(178, 100%, 50%);
+    /* (card BG): hsl(216, 50%, 16%) */
+    /* (line): hsl(215, 32%, 27%) */
+    /* White: hsl(0, 0%, 100%) */
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    background-color: hsl(217, 54%, 11%);
+}
+
+.container {
+    margin: 200px auto;
+    background-color: hsl(215, 49%, 18%);
+    max-width: 400px;
+    border-radius: 20px;
+}
+
+.card {
+    max-width: 100%;
+    padding: 7%;
+
+}
+
+img {
+    cursor: pointer;
+    max-width: 100%;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card-title {
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.card-title:hover {
+    color: var(--secondary-color);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.card-content {
+    color: hsl(214, 22%, 45%);
+}
+
+.card-price {
+    color: var(--secondary-color);
+}
+
+.card .time-content {
+    color: var(--primary-color);
+}
+
+.separator {
+    height: 2px;
+    width: auto;
+    background-color: hsl(215, 32%, 27%);
+}
+
+
+.profil-image {
+    height: 40px;
+    border: 2px solid hsl(0, 3%, 60%);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.profile-info {
+    color: var(--primary-color);
+}
+
+.profile-info span {
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.profile-info span:hover {
+    color: var(--secondary-color);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.profile-info p {
+    padding-left: 20px;
+
+}
+
+
+.card-specs {
+    /* border: 1px solid yellow; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.card-price {
+    display: flex;
+    /* border: 1px solid cyan; */
+}
+
+.eth-icon {
+    display: flex;
+    align-items: center;
+}
+
+.clock {
+    display: flex;
+    align-items: center;
+}
+
+.time-left {
+    display: flex;
+
+}
+
+.card-specs img {
+    padding-right: 10px;
+}
